@@ -7,7 +7,8 @@ $(document).ready(function(){
   $("#fila-2,#fila-3,#fila-4,#fila-5").hide();
   $('#formulario').on('submit',function( event ){
     event.preventDefault();
-  })
+  });
+  // TODO: Copiar función de DELEGATE
   $('#fila-4').delegate('input','keyup',function(){
     var todo_bien = true;
     $('#fila-4').find('input').each(function(){
